@@ -1,0 +1,234 @@
+:root {
+  --pixie-ink: #111827;
+  --pixie-slate: #374151;
+  --pixie-mid: #4b5563;
+  --pixie-purple: #7c3aed;
+  --pixie-purple-dark: #5b21b6;
+  --pixie-blue: #38bdf8;
+  --pixie-bg: #f3f4f6;
+  --pixie-line: #d1d5db;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--pixie-bg);
+  color: var(--pixie-ink);
+  line-height: 1.6;
+}
+
+.navbar {
+  background: linear-gradient(90deg, var(--pixie-ink), var(--pixie-slate)) !important;
+  box-shadow: 0 4px 14px rgba(17, 24, 39, 0.16);
+}
+
+.navbar-brand {
+  color: var(--pixie-blue) !important;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  color: #f9fafb !important;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--pixie-blue) !important;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--pixie-ink), var(--pixie-mid), var(--pixie-purple));
+  padding: 84px 20px;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.logo {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: #fff;
+  text-shadow: 0 0 10px var(--pixie-blue), 3px 3px 0 var(--pixie-ink);
+}
+
+.sublogo {
+  margin: 12px 0 18px;
+  color: var(--pixie-blue);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.section-space {
+  padding-top: 56px;
+}
+
+.panel-card {
+  background: #fff;
+  border: 1px solid rgba(209, 213, 219, 0.8);
+  border-radius: 18px;
+  padding: clamp(22px, 4vw, 36px);
+  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.07);
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
+.section-heading.compact-heading {
+  margin-bottom: 18px;
+}
+
+.section-heading h2 {
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.section-heading p {
+  color: #6b7280;
+  margin-bottom: 0;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: var(--pixie-purple);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+  padding: 11px 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--pixie-purple);
+  box-shadow: 0 0 0 0.2rem rgba(124, 58, 237, 0.16);
+}
+
+.product-card {
+  border: 1px solid var(--pixie-line);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(124, 58, 237, 0.16) !important;
+}
+
+.product-image {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  background: var(--pixie-ink);
+}
+
+.product-category {
+  width: fit-content;
+  background: var(--pixie-slate) !important;
+  color: var(--pixie-blue);
+}
+
+.normal-price {
+  color: #6b7280;
+  text-decoration: line-through;
+}
+
+.offer-price {
+  color: var(--pixie-purple);
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.btn-primary {
+  background: var(--pixie-purple) !important;
+  border-color: var(--pixie-purple) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: var(--pixie-purple-dark) !important;
+  border-color: var(--pixie-purple-dark) !important;
+}
+
+.cart-panel {
+  border: 2px solid var(--pixie-blue);
+}
+
+.cart-item,
+.catalog-manager-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--pixie-line);
+}
+
+.cart-item:last-child,
+.catalog-manager-item:last-child {
+  border-bottom: 0;
+}
+
+.cart-total {
+  color: var(--pixie-purple);
+  font-size: 1.45rem;
+}
+
+.catalog-manager-list {
+  display: grid;
+  gap: 0;
+}
+
+.site-footer {
+  margin-top: 64px;
+  background: linear-gradient(90deg, var(--pixie-ink), var(--pixie-slate));
+}
+
+.footer-brand {
+  color: var(--pixie-blue);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 767.98px) {
+  .hero {
+    padding: 58px 18px;
+  }
+
+  .logo {
+    letter-spacing: 3px;
+  }
+
+  .product-image {
+    height: 240px;
+  }
+
+  .cart-item,
+  .catalog-manager-item {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .cart-item .btn,
+  .catalog-manager-item .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-space {
+    padding-top: 40px;
+  }
+
+  .product-image {
+    height: 220px;
+  }
+}

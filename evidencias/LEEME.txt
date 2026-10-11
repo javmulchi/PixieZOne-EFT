@@ -1,0 +1,37 @@
+CAPTURAS RECOMENDADAS PARA LA EFT
+
+01_inicio_pixiezone.png
+- Hero, navbar y diseño general.
+
+02_catalogo_y_filtro_categoria.png
+- Tarjetas visibles y selector de categoría funcionando.
+
+03_busqueda_producto.png
+- Resultado filtrado mediante buscador.
+
+04_gestion_catalogo.png
+- Videojuego agregado dinámicamente o lista con botón de quitar.
+
+05_carrito_con_producto.png
+- Contador, producto y total.
+
+06_carrito_vacio.png
+- Mensaje de renderizado condicional.
+
+07_contacto_validacion_error.png
+- Formulario mostrando errores.
+
+08_contacto_envio_correcto.png
+- Mensaje de éxito después de datos válidos.
+
+09_vista_mobile.png
+- Navbar hamburguesa y tarjetas en una columna.
+
+10_build_exitoso.png
+- Terminal mostrando npm run build finalizado sin errores.
+
+11_github_commits.png
+- Repositorio público con historial de commits.
+
+12_readme.png
+- README con instrucciones de instalación y uso.
